@@ -29,15 +29,15 @@
     NSPipe *pipe = [NSPipe pipe];
 	NSPipe *resultPipe = [[NSPipe alloc] init];
     
-    //première tache top -l 1 -o rsize -stats command,rsize  
-    //affiche nom et taille
+    //First terminal task: top -l 1 -o rsize -stats command,rsize
+    //show name and size
     [task setLaunchPath: @"/usr/bin/top"];
     arguments = [NSArray arrayWithObjects: @"-l 1", @"-o",@"rsize",@"-stats",@"command,rsize", nil];
     [task setArguments: arguments];
     [task setStandardOutput: pipe];
     [task launch];
     
-    //deuxième tache grep Chrome
+    //Second task: grep Chrome
 	NSTask *task2 = [[NSTask alloc] init];
 	[task2 setLaunchPath: @"/usr/bin/grep"];
 	[task2 setArguments: [NSArray arrayWithObjects: @"Chrome", nil]];
@@ -51,12 +51,13 @@
     string = [[[NSString alloc] initWithData: result encoding: NSUTF8StringEncoding]autorelease];
     
     
-    //nombre de lignes
+    //numbers of lines
     NSInteger length = [[string componentsSeparatedByCharactersInSet:
                          [NSCharacterSet newlineCharacterSet]] count];
-    length-=6;
     
-    //Nettoyage du résultat en enlevant les textes pour ne garder que la place en RAM
+    length-=7; //I don't know why...
+    
+    //Cleaning of the result deleting text, keeping only numbers of memory in RAM
     string = [string stringByReplacingOccurrencesOfString:@"Google Chrome He" withString:@""];
     string = [string stringByReplacingOccurrencesOfString:@"Google Chrome" withString:@""];
     string = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
@@ -64,19 +65,24 @@
     string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     NSMutableArray *arr = [[string componentsSeparatedByString:@"M+"] mutableCopy];
 
-    //NSLog(@" Contenu %@",arr); %@ string, %ld long, %g double
+    
+
+    //NSLog(@" Contenu en mega%@",arr); //%@ string, %ld long, %g double
+   
     
     float val = 0;
-    float test = 0;
+    //float test = 0;
     //NSLog(@"Nombre de processus : %ld", length);
     for (int i=0; i<length;i++)
     {
-        test = [[arr objectAtIndex:i] integerValue];;
-        //NSLog(@"Valeur : %f", test);
+        //test = [[arr objectAtIndex:i] integerValue];;
+        //NSLog(@"Valeur en mega : %f", test);
         val += [[arr objectAtIndex:i] integerValue];;
     }
     
-    //afficher avec deux chiffres après la virgule
+    
+    
+    //Show with two numbers after coma
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     formatter.roundingIncrement = [NSNumber numberWithDouble:0.01];
     formatter.numberStyle = NSNumberFormatterDecimalStyle;
