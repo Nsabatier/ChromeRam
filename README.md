@@ -1,4 +1,4 @@
 ChromeRam
 =========
 
-Software that show how much memory Google Chrome uses.
+Software that shows how much memory Google Chrome uses.
