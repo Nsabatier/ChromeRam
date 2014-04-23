@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2D11D331806A10F0036FFA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D11D321806A10F0036FFA8 /* Images.xcassets */; };
 		C2FED2A0140D3EEC00BF7541 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FED29F140D3EEC00BF7541 /* Cocoa.framework */; };
 		C2FED2AA140D3EEC00BF7541 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2FED2A8140D3EEC00BF7541 /* InfoPlist.strings */; };
 		C2FED2AC140D3EEC00BF7541 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FED2AB140D3EEC00BF7541 /* main.m */; };
 		C2FED2B0140D3EEC00BF7541 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C2FED2AE140D3EEC00BF7541 /* Credits.rtf */; };
-		C2FED2B3140D3EEC00BF7541 /* ChromeRAMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FED2B2140D3EEC00BF7541 /* ChromeRAMAppDelegate.m */; };
 		C2FED2B6140D3EEC00BF7541 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2FED2B4140D3EEC00BF7541 /* MainMenu.xib */; };
 		C2FED2BE140D3EED00BF7541 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FED2BD140D3EED00BF7541 /* SenTestingKit.framework */; };
 		C2FED2BF140D3EED00BF7541 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FED29F140D3EEC00BF7541 /* Cocoa.framework */; };
-		C2FED2C7140D3EED00BF7541 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2FED2C5140D3EED00BF7541 /* InfoPlist.strings */; };
-		C2FED2C9140D3EED00BF7541 /* ChromeRAMTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C2FED2C8140D3EED00BF7541 /* ChromeRAMTests.h */; };
-		C2FED2CB140D3EED00BF7541 /* ChromeRAMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FED2CA140D3EED00BF7541 /* ChromeRAMTests.m */; };
+		C2FED2D6140D3F2700BF7541 /* GUIControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C2FED2D5140D3F2700BF7541 /* GUIControl.m */; };
+		C2FED2D8140D3F8300BF7541 /* todo.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C2FED2D7140D3F8300BF7541 /* todo.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,25 +30,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2D11D321806A10F0036FFA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C2FED29B140D3EEC00BF7541 /* ChromeRAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromeRAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FED29F140D3EEC00BF7541 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C2FED2A2140D3EEC00BF7541 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C2FED2A3140D3EEC00BF7541 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C2FED2A4140D3EEC00BF7541 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C2FED2A7140D3EEC00BF7541 /* ChromeRAM-Info.plist */ = {isa = PBXFileReference; path = "ChromeRAM-Info.plist"; sourceTree = "<group>"; };
+		C2FED2A7140D3EEC00BF7541 /* ChromeRAM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChromeRAM-Info.plist"; sourceTree = "<group>"; };
 		C2FED2A9140D3EEC00BF7541 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C2FED2AB140D3EEC00BF7541 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C2FED2AD140D3EEC00BF7541 /* ChromeRAM-Prefix.pch */ = {isa = PBXFileReference; path = "ChromeRAM-Prefix.pch"; sourceTree = "<group>"; };
+		C2FED2AD140D3EEC00BF7541 /* ChromeRAM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChromeRAM-Prefix.pch"; sourceTree = "<group>"; };
 		C2FED2AF140D3EEC00BF7541 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C2FED2B1140D3EEC00BF7541 /* ChromeRAMAppDelegate.h */ = {isa = PBXFileReference; path = ChromeRAMAppDelegate.h; sourceTree = "<group>"; };
-		C2FED2B2140D3EEC00BF7541 /* ChromeRAMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromeRAMAppDelegate.m; sourceTree = "<group>"; };
 		C2FED2B5140D3EEC00BF7541 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C2FED2BC140D3EED00BF7541 /* ChromeRAMTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChromeRAMTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FED2BD140D3EED00BF7541 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C2FED2C4140D3EED00BF7541 /* ChromeRAMTests-Info.plist */ = {isa = PBXFileReference; path = "ChromeRAMTests-Info.plist"; sourceTree = "<group>"; };
-		C2FED2C6140D3EED00BF7541 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C2FED2C8140D3EED00BF7541 /* ChromeRAMTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChromeRAMTests.h; sourceTree = "<group>"; };
-		C2FED2CA140D3EED00BF7541 /* ChromeRAMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromeRAMTests.m; sourceTree = "<group>"; };
+		C2FED2D4140D3F2700BF7541 /* GUIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GUIControl.h; path = ../GUIControl.h; sourceTree = "<group>"; };
+		C2FED2D5140D3F2700BF7541 /* GUIControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GUIControl.m; path = ../GUIControl.m; sourceTree = "<group>"; };
+		C2FED2D7140D3F8300BF7541 /* todo.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = todo.rtf; path = ChromeRAM/todo.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +73,8 @@
 		C2FED290140D3EEB00BF7541 = {
 			isa = PBXGroup;
 			children = (
+				C2FED2D7140D3F8300BF7541 /* todo.rtf */,
 				C2FED2A5140D3EEC00BF7541 /* ChromeRAM */,
-				C2FED2C2140D3EED00BF7541 /* ChromeRAMTests */,
 				C2FED29E140D3EEC00BF7541 /* Frameworks */,
 				C2FED29C140D3EEC00BF7541 /* Products */,
 			);
@@ -115,9 +112,10 @@
 		C2FED2A5140D3EEC00BF7541 /* ChromeRAM */ = {
 			isa = PBXGroup;
 			children = (
-				C2FED2B1140D3EEC00BF7541 /* ChromeRAMAppDelegate.h */,
-				C2FED2B2140D3EEC00BF7541 /* ChromeRAMAppDelegate.m */,
+				C2FED2D4140D3F2700BF7541 /* GUIControl.h */,
+				C2FED2D5140D3F2700BF7541 /* GUIControl.m */,
 				C2FED2B4140D3EEC00BF7541 /* MainMenu.xib */,
+				C2D11D321806A10F0036FFA8 /* Images.xcassets */,
 				C2FED2A6140D3EEC00BF7541 /* Supporting Files */,
 			);
 			path = ChromeRAM;
@@ -131,25 +129,6 @@
 				C2FED2AB140D3EEC00BF7541 /* main.m */,
 				C2FED2AD140D3EEC00BF7541 /* ChromeRAM-Prefix.pch */,
 				C2FED2AE140D3EEC00BF7541 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C2FED2C2140D3EED00BF7541 /* ChromeRAMTests */ = {
-			isa = PBXGroup;
-			children = (
-				C2FED2C8140D3EED00BF7541 /* ChromeRAMTests.h */,
-				C2FED2CA140D3EED00BF7541 /* ChromeRAMTests.m */,
-				C2FED2C3140D3EED00BF7541 /* Supporting Files */,
-			);
-			path = ChromeRAMTests;
-			sourceTree = "<group>";
-		};
-		C2FED2C3140D3EED00BF7541 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C2FED2C4140D3EED00BF7541 /* ChromeRAMTests-Info.plist */,
-				C2FED2C5140D3EED00BF7541 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -198,6 +177,10 @@
 /* Begin PBXProject section */
 		C2FED292140D3EEC00BF7541 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0500;
+			};
 			buildConfigurationList = C2FED295140D3EEC00BF7541 /* Build configuration list for PBXProject "ChromeRAM" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -223,7 +206,9 @@
 			files = (
 				C2FED2AA140D3EEC00BF7541 /* InfoPlist.strings in Resources */,
 				C2FED2B0140D3EEC00BF7541 /* Credits.rtf in Resources */,
+				C2D11D331806A10F0036FFA8 /* Images.xcassets in Resources */,
 				C2FED2B6140D3EEC00BF7541 /* MainMenu.xib in Resources */,
+				C2FED2D8140D3F8300BF7541 /* todo.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,8 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2FED2C7140D3EED00BF7541 /* InfoPlist.strings in Resources */,
-				C2FED2C9140D3EED00BF7541 /* ChromeRAMTests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FED2AC140D3EEC00BF7541 /* main.m in Sources */,
-				C2FED2B3140D3EEC00BF7541 /* ChromeRAMAppDelegate.m in Sources */,
+				C2FED2D6140D3F2700BF7541 /* GUIControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2FED2CB140D3EED00BF7541 /* ChromeRAMTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +289,6 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		C2FED2C5140D3EED00BF7541 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C2FED2C6140D3EED00BF7541 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -322,7 +296,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -337,8 +316,11 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -348,7 +330,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -357,8 +344,11 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -366,6 +356,8 @@
 		C2FED2CF140D3EED00BF7541 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChromeRAM/ChromeRAM-Prefix.pch";
 				INFOPLIST_FILE = "ChromeRAM/ChromeRAM-Info.plist";
@@ -377,6 +369,8 @@
 		C2FED2D0140D3EED00BF7541 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChromeRAM/ChromeRAM-Prefix.pch";
 				INFOPLIST_FILE = "ChromeRAM/ChromeRAM-Info.plist";
@@ -389,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChromeRAM.app/Contents/MacOS/ChromeRAM";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChromeRAM/ChromeRAM-Prefix.pch";
@@ -403,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChromeRAM.app/Contents/MacOS/ChromeRAM";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChromeRAM/ChromeRAM-Prefix.pch";
@@ -432,6 +428,7 @@
 				C2FED2D0140D3EED00BF7541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2FED2D1140D3EED00BF7541 /* Build configuration list for PBXNativeTarget "ChromeRAMTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +437,7 @@
 				C2FED2D3140D3EED00BF7541 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
