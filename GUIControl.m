@@ -107,7 +107,7 @@
             string = [string stringByAppendingString:@" Go"];
         }
         
-        string = [string stringByAppendingString:@"\nNombre de processus : "];
+        string = [string stringByAppendingString:@"\nNumber of process : "];
         string = [string stringByAppendingString:[NSString stringWithFormat:@"%ld", (long)length]];
     }
     else
@@ -117,7 +117,7 @@
         string  = @"Total : ";
         string = [string stringByAppendingString:[NSString stringWithFormat:@"%g", (double)val]];
         string = [string stringByAppendingString:@"Mo"];
-        string = [string stringByAppendingString:@"\nNombre de processus : "];
+        string = [string stringByAppendingString:@"\nNumber of process : "];
         string = [string stringByAppendingString:[NSString stringWithFormat:@"%ld", (long)length]];
     }
     
